@@ -1,0 +1,37 @@
+.item {
+  padding: 0.5rem;
+  height: min-content;
+  background-color: rgba(230, 230, 230, 0.418);
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr min-content max-content max-content;
+  column-gap: 1rem;
+  align-items: center;
+  position: relative;
+
+  & .item-text {
+    font-size: 1.3rem;
+    margin: 0;
+  }
+
+  & .item-text.item-done {
+    text-decoration: line-through;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  @media screen and (max-width: 550px) {
+    & {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, min-content);
+      row-gap: 1rem;
+    }
+
+    & .item-icon {
+      text-align: center;
+      margin: 0.5rem 0 0;
+    }
+  }
+}

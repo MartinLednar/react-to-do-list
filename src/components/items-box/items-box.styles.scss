@@ -1,0 +1,18 @@
+.items-box {
+  width: 100%;
+  height: min-content;
+  overflow: hidden;
+  overflow-y: visible;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+
+  & .empty-title {
+    font-size: 2rem;
+    color: grey;
+    opacity: 0.7;
+    text-align: center;
+    margin: 1rem 0 0;
+    font-weight: 300;
+  }
+}

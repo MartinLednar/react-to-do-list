@@ -1,0 +1,21 @@
+.custom-btn {
+  background-color: transparent;
+  color: black;
+  font-size: 1.1rem;
+  padding: 0.8rem 0.5rem;
+  cursor: pointer;
+  border: 2px solid green;
+  transition: all 0.5s;
+
+  &:hover {
+    color: white;
+    background-color: green;
+  }
+
+  &.delete-btn {
+    border: none;
+    color: white;
+    background-color: rgb(255, 52, 52);
+    border: 2px solid rgb(255, 52, 52);
+  }
+}
