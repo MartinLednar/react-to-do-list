@@ -4,3 +4,4 @@ This is simple To-do list app made with CRA. I built this application to test an
 # Built with
 - React.js
 - Firebase
+- Sass
